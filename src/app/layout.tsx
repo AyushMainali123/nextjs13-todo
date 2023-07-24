@@ -1,6 +1,7 @@
-import './globals.css'
+import { cn } from '@/lib/utils'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
+import './global.css'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -16,7 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={cn(inter.className, 'bg-slate-800 text-slate-100 container mx-auto p-4')}>{children}</body>
     </html>
   )
 }
