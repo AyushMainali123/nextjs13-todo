@@ -5,6 +5,7 @@ import Link from "next/link";
 import { Suspense } from "react";
 import RootLoading from "./loading";
 
+export const revalidate = 0;
 
 async function getTodos() {
   await new Promise((resolve) => setTimeout(resolve, 10000));
