@@ -8,7 +8,7 @@ import RootLoading from "./loading";
 export const revalidate = 0;
 
 async function getTodos() {
-  await new Promise((resolve) => setTimeout(resolve, 10000));
+  // await new Promise((resolve) => setTimeout(resolve, 10000));
   return prisma.todo.findMany();
 }
 
